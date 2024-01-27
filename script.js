@@ -51,7 +51,7 @@ function operate(exp) {
     }
 }
 
-// Splitting based on the arithmetic operators +, -, x, and / and Identifying the operator
+// Splitting the expression based on the arithmetic operators (+, -, x, and /) and Identifying the operator
 function splitExpression(exp) {
     //Takes a string argument and returns an array of 2 operands and an operator
     let result = [];
@@ -100,6 +100,7 @@ keys.forEach((key) => {
     })
 })
 
+//delete key
 const deleteKey = document.querySelector('.delete');
 deleteKey.addEventListener('click', () => {
     let expressionArr = expression.split('');
@@ -108,6 +109,7 @@ deleteKey.addEventListener('click', () => {
     screen.textContent = expression;
 })
 
+//clear key
 const clearKey = document.querySelector('.clear');
 clearKey.addEventListener('click', () => {
     expression = '';
