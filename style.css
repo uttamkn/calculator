@@ -59,6 +59,9 @@ body{
 }
 
 .keys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 7px;
     width: 48px;
     height: 48px;
@@ -71,4 +74,8 @@ body{
 .keys:hover {
     background-color: grey;
     color: beige;
+}
+
+img {
+    width: 40px;
 }
