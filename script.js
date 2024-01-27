@@ -101,10 +101,16 @@ keys.forEach((key) => {
     })
 })
 
-const DeleteKey = document.querySelector('.delete');
-DeleteKey.addEventListener('click', () => {
+const deleteKey = document.querySelector('.delete');
+deleteKey.addEventListener('click', () => {
     let expressionArr = expression.split('');
     expressionArr.pop();
     expression = expressionArr.join('');
+    screen.textContent = expression;
+})
+
+const clearKey = document.querySelector('.clear');
+clearKey.addEventListener('click', () => {
+    expression = '';
     screen.textContent = expression;
 })
