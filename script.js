@@ -90,7 +90,6 @@ keys.forEach((key) => {
             screen.textContent = expression;
         }
         else if(key.textContent == '=') {
-            // checkExpression(expression);
             expression = operate(expression);
             screen.textContent = expression;
         }
