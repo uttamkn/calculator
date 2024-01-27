@@ -6,6 +6,11 @@ body{
     background-color: rgb(32, 31, 31);
 }
 
+@font-face {
+    font-family: digitalFont;
+    src: url(./fonts/digital-7.ttf);
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -39,8 +44,8 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 16px;
-    font-family: sans-serif;
+    font-size: 28px;
+    font-family: digitalFont;
     color: #1f2937;
     margin-bottom: 20px;
     min-width: 220px;
